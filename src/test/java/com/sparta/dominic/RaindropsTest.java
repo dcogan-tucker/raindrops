@@ -77,4 +77,11 @@ public class RaindropsTest {
         String expected = "PlingPlangPlong";
         assertEquals(expected, actual);
     }
+
+    @Test
+    void input4Returns4AsAString() {
+        String actual = raindrops.plingPlangPlong(4);
+        String expected = "4";
+        assertEquals(expected, actual);
+    }
 }
