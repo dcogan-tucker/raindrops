@@ -13,5 +13,9 @@ public class Raindrops {
         if (n % 7 == 0) {
             stringBuilder.append("Plong");
         }
+        if (stringBuilder.length() == 0) {
+            stringBuilder.append(n);
+        }
+        return stringBuilder.toString();
     }
 }
