@@ -3,19 +3,28 @@ package com.sparta.dominic;
 public class Raindrops {
 
     public String plingPlangPlong(int n) {
+        // String builder used to generate result.
         StringBuilder stringBuilder = new StringBuilder();
-        if (n % 3 == 0) {
+        // Check if 3 is a factor of n
+        if (isFactorOf(3, n)) {
             stringBuilder.append("Pling");
         }
-        if (n % 5 == 0) {
+        // Check if 5 is a factor of n
+        if (isFactorOf(5, n)) {
             stringBuilder.append("Plang");
         }
-        if (n % 7 == 0) {
+        // Check if 7 is a factor of n
+        if (isFactorOf(7, n)) {
             stringBuilder.append("Plong");
         }
+        // If empty none of 3, 5 and 7 are factors.
         if (stringBuilder.length() == 0) {
             stringBuilder.append(n);
         }
         return stringBuilder.toString();
+    }
+
+    private boolean isFactorOf(int f, int n) {
+        return n % f == 0;
     }
 }
