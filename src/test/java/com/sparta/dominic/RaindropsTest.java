@@ -65,6 +65,13 @@ public class RaindropsTest {
     }
 
     @Test
+    void inputNegative55ReturnsPlang() {
+        String actual = raindrops.plingPlangPlong(-55);
+        String expected = "Plang";
+        assertEquals(expected, actual) ;
+    }
+
+    @Test
     void input0ReturnsPlingPlangPlong() {
         String actual = raindrops.plingPlangPlong(0);
         String expected = "PlingPlangPlong";
