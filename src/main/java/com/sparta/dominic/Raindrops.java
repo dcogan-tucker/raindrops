@@ -10,5 +10,8 @@ public class Raindrops {
         if (n % 5 == 0) {
             stringBuilder.append("Plang");
         }
+        if (n % 7 == 0) {
+            stringBuilder.append("Plong");
+        }
     }
 }
