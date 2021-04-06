@@ -22,3 +22,7 @@ Some examples of inputs and the expected outputs.
 |63|1, 3, 7, 9, 21, 63|PlingPlong|
 |105|1, 3, 5, 7, 15, 21, 35, 105|PlingPlangPlong|
 |107|1, 107|107|
+
+## Approach
+
+I implemented TTD to develop this application, initially creating tests for all possible text outputs. I then provided implementation to the application to pass these tests. When all these tests passed I created more tests to cover negative inputs and when output is the input integer. Finally updating the implementation to pass these new tests.
